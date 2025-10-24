@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otobüs Koltuk Düzeni</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .bus-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 900px;
+            width: 100%;
+        }
+        .bus-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a237e;
+        }
+        .bus-header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .bus-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .seating-area {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .seat-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .seat {
+            width: 50px;
+            height: 50px;
+            background: #e3e8f0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .seat.occupied {
+            background: #cfd8dc;
+            color: #888;
+            border-color: #888;
+        }
+        .corridor {
+            height: 30px;
+            text-align: center;
+            color: #888;
+            font-style: italic;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        .available-color {
+            background: #e3e8f0;
+            border: 2px solid #2563eb;
+        }
+        .occupied-color {
+            background: #cfd8dc;
+            border: 2px solid #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="bus-container">
+        <div class="bus-header">
+            <div class="bus-icon">🚌</div>
+            <h1>Otobüs Koltuk Düzeni</h1>
+        </div>
+        
+        <div class="seating-area">
+            
+            <div class="seat-row">
+                <div class="seat">1</div>
+                <div class="seat">2</div>
+                <div class="seat">3</div>
+                <div class="seat">4</div>
+                <div class="seat">5</div>
+                <div class="seat">6</div>
+                <div class="seat">7</div>
+                <div class="seat">8</div>
+                <div class="seat">9</div>
+                <div class="seat">10</div>
+                <div class="seat">11</div>
+                <div class="seat">12</div>
+                <div class="seat">13</div>
+            </div>
+            
+            
+            <div class="corridor">KORİDOR</div>
+            
+            
+            <div class="seat-row">
+                <div class="seat">14</div>
+                <div class="seat">15</div>
+                <div class="seat">16</div>
+                <div class="seat">17</div>
+                <div class="seat">18</div>
+                <div class="seat">19</div>
+                <div class="seat">20</div>
+                <div class="seat">21</div>
+                <div class="seat">22</div>
+                <div class="seat">23</div>
+                <div class="seat">24</div>
+                <div class="seat">25</div>
+                <div class="seat">26</div>
+            </div>
+            
+            <div class="seat-row">
+                <div class="seat">27</div>
+                <div class="seat">28</div>
+                <div class="seat">29</div>
+                <div class="seat">30</div>
+                <div class="seat">31</div>
+                <div class="seat">32</div>
+                <div class="seat">33</div>
+                <div class="seat">34</div>
+                <div class="seat">35</div>
+                <div class="seat">36</div>
+                <div class="seat">37</div>
+                <div class="seat">38</div>
+                <div class="seat">39</div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color available-color"></div>
+                <span>Müsait Koltuk</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color occupied-color"></div>
+                <span>Dolu Koltuk</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
